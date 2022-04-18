@@ -1,0 +1,2 @@
+# Whitelist Dapp (School project)
+

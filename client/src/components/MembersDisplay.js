@@ -23,6 +23,9 @@ export default function MembersDisplay() {
       <h1>Whitelist : </h1>
       <div id="MembersDisplay">
        {state.map((value) => {
+         if(value == "0x0000000000000000000000000000000000000000"){
+           return "";
+         }
          return <Address txt={value}></Address>
        })}
       </div>

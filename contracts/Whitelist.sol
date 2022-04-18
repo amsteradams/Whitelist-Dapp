@@ -36,7 +36,7 @@ contract Whitelist is Ownable{
         }
         return tmpMembers;
     }
-    /*
+    
     function delMember(address _address)external onlyOwner{
         require(whitelist[_address], "Member not registered");
         whitelist[_address] = false ;
@@ -47,7 +47,8 @@ contract Whitelist is Ownable{
                index = i;
             }
         }
-        //Members.pop();
+        Members[index] = Members[Members.length - 1];
+        delete Members[Members.length - 1];
     }
-    */
+    
 }

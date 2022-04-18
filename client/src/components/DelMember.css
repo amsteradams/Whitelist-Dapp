@@ -1,11 +1,11 @@
-#addMember{
+#delMember{
     position: absolute;
     right: 150px;
-    top: 50px;
+    top: 90px;
 }
 
-#addMember button{
-    background-color: rgb(49, 139, 53);
+#delMember button{
+    background-color: rgb(235, 88, 88);
     font-weight: 500;
     color:white;
     border-color: gray;

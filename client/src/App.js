@@ -7,6 +7,7 @@ import "./App.css";
 import { createContext } from "react";
 import MembersDisplay from "./components/MembersDisplay";
 import AddMember from "./components/AddMember";
+import DelMember from "./components/DelMember";
 
 export const ContractContext = createContext();
 const App = () => {
@@ -64,6 +65,7 @@ const App = () => {
         <ContractContext.Provider value={{ ContractVar, setContractVar }}>
           <MembersDisplay></MembersDisplay>
           <AddMember />
+          <DelMember />
         </ContractContext.Provider>
       </div>
       
